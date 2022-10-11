@@ -9,7 +9,7 @@ class Square extends React.Component {
     return (
       <button
         className="square"
-        onClick={() =>  this.props.onClick()} // what does this.props.onClick() refer to? yeah... it's undefinited...
+        onClick={() => this.props.onClick()}
       >
         {this.props.value}
       </button>
@@ -21,15 +21,20 @@ class Board extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      squares: Array(9).fill('Y')
+      squares: Array(9).fill('O')
     }
   }
   renderSquare(i) {
-    return <Square value={this.handleClick(i)} />;
+    return (
+      <Square
+        value={this.state.squares[i]}
+        onClick={() => this.handleClick(i)}
+      />
+    )
   }
 
   handleClick(i) {
-
+    console.log(`You clicked ${i}`)
   }
 
   render() {
