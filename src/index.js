@@ -3,18 +3,13 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 
 
-class Square extends React.Component {
-
-  render() {
-    return (
-      <button
-        className="square"
-        onClick={() => this.props.onClick()}
-      >
-        {this.props.value}
-      </button>
-    );
-  }
+// this is a function component (stateless)
+function Square(props) {
+  return (
+    <button className="square" onClick={props.onClick}>
+      {props.value}
+    </button>
+  )
 }
 
 class Board extends React.Component {
@@ -34,7 +29,10 @@ class Board extends React.Component {
   }
 
   handleClick(i) {
-    console.log(`You clicked ${i}`)
+    // console.log(`You clicked ${i}`)
+    const squares = this.state.squares.slice()  // create a clone of the array
+    squares[i] = 'X'
+    this.setState({squares: squares})
   }
 
   render() {
