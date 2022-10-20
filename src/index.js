@@ -6,14 +6,15 @@ import './index.css'
 class Game extends React.Component {
   render() {
     return (
-      <main className="grid md:grid-cols-3">
-        <section id="todoism" className="background-purple-300">todos</section>
-        <div className="flex flex-col">
-          <section id="clock" className="background-red-300">clock</section>
-          <section id="quote" className="background-blue-300">quote</section>
-        </div>
-        <section id="weather" className="background-green-300">weather</section>
-      </main>
+      <header className="grid grid-cols-4">
+        <section className="col-1 bg-red-400">todoBar</section>
+        <section className="col-start-4 col-1 flex">
+          <section className="bg-green-400 grow">weatherBar</section>
+          <section className="bg-blue-400 justify-self-end">settingsBtn</section>
+        </section>
+      </header>
+
+      
     );
   }
 }
