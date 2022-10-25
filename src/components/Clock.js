@@ -18,7 +18,7 @@ export class Clock extends React.Component {
     let timeStr = `${now.getHours()}:${minStr}`
 
     return (
-      <div className="mt-[24vh] p-8 text-center text-8xl">{timeStr}</div>
+      <div className="mt-[24vh] p-8 text-center text-8xl text-neutral-50/90 text-shadow-lg">{timeStr}</div>
     )
   }
 }

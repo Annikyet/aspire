@@ -10,7 +10,7 @@ export class WeatherBar extends React.Component {
 
 
     return (
-      <div className="grow text-right p-2">
+      <div className="grow text-right p-2 text-2xl text-neutral-100/80">
         {temp}℉
         <i className="mdi mdi-weather-pouring pl-2"></i>  
       </div>

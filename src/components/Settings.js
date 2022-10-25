@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client'
 export class SettingsBtn extends React.Component {
   render() {
     return (
-      <div className="hover:bg-slate-300 justify-self-end p-2">
+      <div className="hover:bg-slate-300 justify-self-end p-2 text-2xl text-neutral-100/80 hover:text-neutral-900/80">
         <i className="mdi mdi-menu"></i>
       </div>
     )
