@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client'
 export class TodoBar extends React.Component {
   render() {
     return (
-      <div className="min-w-[25vw] bg-red-400">todos</div>
+      <div className="min-w-[25vw] p-2">You got stuff to do!</div>
     );
   }
 }
