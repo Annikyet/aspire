@@ -4,6 +4,7 @@ import './index.css'
 
 // import components
 import { TodoBar, TodoPane } from './components/Todo.js'
+import { WeatherBar, WeatherPane } from './components/Weather.js'
 
 
 class Main extends React.Component {
@@ -13,7 +14,7 @@ class Main extends React.Component {
         <div className="flex justify-between">
           <TodoBar />
           <div className="min-w-[25vw] flex">
-            <div className="bg-green-400 grow">weather</div>
+            <WeatherBar />
             <div className="bg-blue-400 justify-self-end">[]</div>
           </div>
         </div>
@@ -21,10 +22,10 @@ class Main extends React.Component {
         <div className="grow h-100 flex">
           <TodoPane />
           <div className="grow">
-            <div className="mt-[30vh] bg-purple-500">clock</div>
-            <div className="mt-[30vh] bg-orange-500">quote</div>
+            <div className="mt-[24vh] bg-purple-500">clock</div>
+            <div className="mt-[36vh] bg-orange-500">quote</div>
           </div>
-          <div className="hidden md:block md:w-[25vw] bg-green-300">weatherPane</div>
+          <WeatherPane />
         </div>
 
         <p className="text-right bg-yellow-500">credits</p>
