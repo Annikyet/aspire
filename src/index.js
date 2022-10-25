@@ -6,7 +6,7 @@ import './index.css'
 class Main extends React.Component {
   render() {
     return (
-      <main className="flex flex-col">
+      <main className="flex flex-col h-[100vh]">
         <div className="flex justify-between">
           <div className="min-w-[25vw] bg-red-400">todos</div>
           <div className="min-w-[25vw] flex">
@@ -15,11 +15,16 @@ class Main extends React.Component {
           </div>
         </div>
         
-        <div className="flex">
-          <div className="hidden md:w-[25vw] bg-purple-500">
-            hewwo
+        <div className="grow h-100 flex">
+          <div className="hidden md:block md:w-[25vw] bg-red-300">todoPane</div>
+          <div className="grow">
+            <div className="mt-[30vh] bg-purple-500">clock</div>
+            <div className="mt-[30vh] bg-orange-500">quote</div>
           </div>
+          <div className="hidden md:block md:w-[25vw] bg-green-300">weatherPane</div>
         </div>
+
+        <p className="text-right bg-yellow-500">credits</p>
       </main>
 
 
