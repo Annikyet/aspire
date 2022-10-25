@@ -5,6 +5,10 @@ import './index.css'
 // import components
 import { TodoBar, TodoPane } from './components/Todo.js'
 import { WeatherBar, WeatherPane } from './components/Weather.js'
+import { SettingsBtn, SettingsPane } from './components/Settings.js'
+import { Clock } from './components/Clock.js'
+import { Quote } from './components/Quote.js'
+import { Credits } from './components/Credits.js'
 
 
 class Main extends React.Component {
@@ -15,20 +19,20 @@ class Main extends React.Component {
           <TodoBar />
           <div className="min-w-[25vw] flex">
             <WeatherBar />
-            <div className="bg-blue-400 justify-self-end">[]</div>
+            <SettingsBtn />
           </div>
         </div>
         
         <div className="grow h-100 flex">
           <TodoPane />
           <div className="grow">
-            <div className="mt-[24vh] bg-purple-500">clock</div>
-            <div className="mt-[36vh] bg-orange-500">quote</div>
+            <Clock />
+            <Quote />
           </div>
-          <WeatherPane />
+          <SettingsPane />
         </div>
 
-        <p className="text-right bg-yellow-500">credits</p>
+        <Credits />
       </main>
 
 
