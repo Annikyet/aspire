@@ -10,6 +10,7 @@ import { Clock } from './components/Clock.js'
 import { Quote } from './components/Quote.js'
 import { Credits } from './components/Credits.js'
 
+
 class EmptyPane extends React.Component {
   render() {
     return (
@@ -18,11 +19,10 @@ class EmptyPane extends React.Component {
   }
 }
 
-
 class Main extends React.Component {
   render() {
     return (
-      <main className="flex flex-col h-[100vh] bg-[url('./img/IMG_3702.jpeg')] text-slate-50">
+      <main className="flex flex-col h-[100vh] bg-[url('./img/IMG_3702.jpeg')] text-slate-50 bg-center bg-cover">
         <div className="flex justify-between">
           <TodoBar />
           <div className="min-w-[25vw] flex">
