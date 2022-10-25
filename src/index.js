@@ -10,6 +10,14 @@ import { Clock } from './components/Clock.js'
 import { Quote } from './components/Quote.js'
 import { Credits } from './components/Credits.js'
 
+class EmptyPane extends React.Component {
+  render() {
+    return (
+      <div className="hidden md:block md:w-[25vw]"></div>
+    )
+  }
+}
+
 
 class Main extends React.Component {
   render() {
@@ -24,12 +32,12 @@ class Main extends React.Component {
         </div>
         
         <div className="grow h-100 flex">
-          <TodoPane />
+          <EmptyPane />
           <div className="grow">
             <Clock />
             <Quote />
           </div>
-          <SettingsPane />
+          <EmptyPane />
         </div>
 
         <Credits />
