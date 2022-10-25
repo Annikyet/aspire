@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 
 // import components
-import TodoBar from './components/TodoBar.js'
+import { TodoBar, TodoPane } from './components/Todo.js'
 
 
 class Main extends React.Component {
@@ -19,7 +19,7 @@ class Main extends React.Component {
         </div>
         
         <div className="grow h-100 flex">
-          <div className="hidden md:block md:w-[25vw] bg-red-300">todoPane</div>
+          <TodoPane />
           <div className="grow">
             <div className="mt-[30vh] bg-purple-500">clock</div>
             <div className="mt-[30vh] bg-orange-500">quote</div>
