@@ -22,7 +22,7 @@ class EmptyPane extends React.Component {
 class Main extends React.Component {
   render() {
     return (
-      <main className="flex flex-col h-[100vh]">
+      <main className="flex flex-col h-[100vh] bg-[url('./img/IMG_3702.jpeg')]">
         <div className="flex justify-between">
           <TodoBar />
           <div className="min-w-[25vw] flex">
